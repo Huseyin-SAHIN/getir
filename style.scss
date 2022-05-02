@@ -432,7 +432,7 @@ body {
 @media screen and (max-width: 767px) {
   .products {
     gap: 0px;
-    grid-template-columns: repeat(4, 0fr);
+    grid-template-columns: repeat(4, 1fr);
     background-color: white;
   }
 
@@ -558,7 +558,7 @@ body {
   .page-shadow {
     .products {
       .product {
-        padding: 0rem;
+        padding: 0.5rem 0;
       }
     }
   }

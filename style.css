@@ -187,7 +187,7 @@ body a {
   border: 1px solid #e8e8e8;
   right: 0.6rem;
   top: 0.6rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .favorites .buy .price {
@@ -500,8 +500,8 @@ body a {
 @media screen and (max-width: 767px) {
   .products {
     gap: 0px;
-    -ms-grid-columns: (0fr)[4];
-        grid-template-columns: repeat(4, 0fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
     background-color: white;
   }
   .page {
@@ -627,7 +627,7 @@ body a {
     border-radius: 0;
   }
   .page-shadow .products .product {
-    padding: 0rem;
+    padding: 0.5rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
