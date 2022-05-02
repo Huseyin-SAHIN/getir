@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getir - Dakikalar içinde kapınızda</title>
+    <link rel="icon" href="resimler/1.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="navbar" style="width: 100%;" class="navbar navbar-expand navbar-fixed">
+        <div class="container-lg overflow-teeth">
+            <div class="overflow-inside">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text-one" href="getir.html">getir</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text-one active" href="getiryemek.html">getir<span
+                                class="text-white">yemek</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text-one" href="getirbuyuk.html">getir<span
+                                class="text-white">büyük</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text-one" href="getirsu.html">getir<span
+                                class="text-white">su</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text-one" href="getircarsi.html">getir<span
+                                class="text-white">çarşı</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text-two hidden d-none d-md-block" href="#"><i
+                                class="bi bi-globe2 navbar-icon"></i>
+                            <span class="hidden d-none d-lg-inline">Türkçe (TR)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link navbar-text-two hidden d-none d-md-block" href="#"><i
+                                class="bi bi-person-fill navbar-icon"></i>
+                            <span class="hidden d-none d-lg-inline">Giriş yap</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text-two hidden d-none d-md-block" href="#"><i
+                                class="bi bi-person-plus-fill navbar-icon"></i>
+                            <span class="hidden d-none d-lg-inline">Kayıt ol</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar hidden d-none d-md-block">
+        <div class="container-lg mt-space mb-5">
+            <div class="row justify-content-between">
+                <div class="logo"><img src="resimler/logo.svg" alt="...">
+                    <h1 class="mt-5">Dakikalar içinde kapınızda</h1>
+                </div>
+                <form class="card-entrance mt-5 mb-5">
+                    <h5 class="entrance mt-2 mb-3 text-center">
+                        Giriş yap veya kayıt ol
+                    </h5>
+                    <div class="input-group">
+                        <span class="input-group-text">+90</span>
+                        <input required type="text" class="form-control" placeholder="Telefon Numarası" />
+                    </div>
+                    <input type="submit" value="Telefon numarası ile devam et" class="btn phone mt-3">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="getirlogo p-3 text-center hidden d-block d-md-none">getir</div>
+    <div class=" hidden d-block d-md-none"><a href="#">
+            <h6 class="delivery"><i class="bi bi-geo-alt-fill location-icon"></i>Teslimat Adresi Belirle</h6>
+        </a>
+    </div>
+    <div class="d-block d-md-none">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="resimler/21.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item active">
+                    <img src="resimler/22.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <form class="d-block d-md-none px-3">
+            <h5 class="entrance mt-4 mb-3 text-center">
+                Giriş yap veya kayıt ol
+            </h5>
+            <div class="input-group">
+                <span class="input-group-text">+90</span>
+                <input required type="number" class="form-control" placeholder="Telefon Numarası" />
+            </div>
+            <input type="submit" value="Telefon numarası ile devam et" class="btn phone mt-3">
+        </form>
+    </div>
+
+
+    <section class="page-shadow">
+        <div class="container-lg pt-4">
+            <h6>Kategoriler</h6>
+            <div class="row products text-center pb-4">
+
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/3.jpg" alt="" />
+                    <h6 class="product-text mt-2">Yeni Ürünler</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/4.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Su & İçecek</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/5.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Meyve & Sebze</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/6.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Fırından</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/7.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Temel Gıda</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/8.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Atıştırmalık</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/9.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Dondurma</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/10.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Süt Ürünleri</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/11.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Kahvaltılık</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/12.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Yiyecek</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/13.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Fit & Form</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/14.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Kişisel Bakım</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/15.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Ev Bakım</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/16.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Ev & Yaşam</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/17.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Teknoloji</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/18.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Evcil Hayvan</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/19.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Bebek</h6>
+                </a>
+                <a href="#" class="product">
+                    <img class="product-img" src="resimler/20.jpeg" alt="" />
+                    <h6 class="product-text mt-2">Cinsel Sağlık</h6>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gri">
+        <div class="container-lg">
+            <div class="campaigns d-none d-md-block">
+                <h6 class="mt-1 pt-4">Kampanyalar</h6>
+                <a href="#"><img class="campaign mt-1 mb-4" src="resimler/22.jpg" alt=""></a>
+                <img class="campaign mt-1 mb-4" src="resimler/21.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="page">
+        <div class="container-lg">
+            <h6 class="pt-3">Favoriler</h6>
+            <div class="text-center favorites">
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/23.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺3,95</h6>
+                        <p class="h6 price-tag">Kuzelden</p>
+                        <p class="description">1.5 LT</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/24.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺7,75</h6>
+                        <p class="h6 price-tag">Kızılay Erzincan</p>
+                        <p class="description">6 x 200 ml</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/25.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺4,40</h6>
+                        <p class="h6 price-tag">Ülker Napoliten</p>
+                        <p class="description">33 g</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/26.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺8,95</h6>
+                        <p class="h6 price-tag">Lay's Mevsim Yeşillikli</p>
+                        <p class="description">96 g</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/27.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺9,85</h6>
+                        <p class="h6 price-tag">Kavrulmuş Siyah Ay Çekirdeği</p>
+                        <p class="description">180 g</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/28.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺11,50</h6>
+                        <p class="h6 price-tag">Magnum Badem</p>
+                        <p class="description">100 ml</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/29.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺10,95</h6>
+                        <p class="h6 price-tag">Uno Tost Ekmeği</p>
+                        <p class="description">350 g</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/30.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺12,95</h6>
+                        <p class="h6 price-tag">İçim %3 Yağlı Süt</p>
+                        <p class="description">1 L</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/31.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺30,95</h6>
+                        <p class="h6 price-tag">Bahçıvan Süzme Peynir</p>
+                        <p class="description">500 g</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/32.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺39,90</h6>
+                        <p class="h6 price-tag">Hertane Kuru Sele Zeytin</p>
+                        <p class="description">285 g</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/33.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺7,50</h6>
+                        <p class="h6 price-tag">Nuh'un Ankara Spaghetti</p>
+                        <p class="description">500 g</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/34.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺39,90</h6>
+                        <p class="h6 price-tag">Colgate Optik White</p>
+                        <p class="description">75 ml</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/35.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺37,50</h6>
+                        <p class="h6 price-tag">Elidor Güçlü ve Parlak Şampuan</p>
+                        <p class="description">650 ml</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/36.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺55,90</h6>
+                        <p class="h6 price-tag">Solo Tuvalet Kağıdı</p>
+                        <p class="description">16'lı</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/37.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺39,99</h6>
+                        <p class="h6 price-tag">Yumoş Extra Orkide Yasemin</p>
+                        <p class="description">1440 ml</p>
+                    </div>
+                </div>
+                <div class="buy position-relative">
+                    <div class="favorites-img-decoraion">
+                        <a href="#">
+                            <img class="favorites-img" src="resimler/38.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href="#"
+                        class="position-absolute shadow add d-flex align-items-center justify-content-center">+</a>
+                    <div class="mt-2">
+                        <h6 class="price">₺14,75</h6>
+                        <p class="h6 price-tag">Domestos Dağ Esintisi</p>
+                        <p class="description">750 ml</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gri">
+        <div class="container-lg">
+            <div class="download">
+                <div class="download-contents">
+                    <h2 class="download-title mb-2">Getir'i indirin!</h2>
+                    <div class="download-text">İstediğiniz ürünleri dakikalar içinde kapınıza getirelim.</div>
+                    <div class="download-image">
+                        <img class="download-image-piece" src="resimler/41.svg" alt="">
+                        <img class="download-image-piece" src="resimler/42.svg" alt="">
+                        <img class="download-image-piece" src="resimler/43.svg" alt="">
+                    </div>
+                </div>
+                <div class="download-background d-none d-md-block">
+                    <img class="download-background-image" src="resimler/40.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="container-lg card-content">
+            <div class="card-control">
+                <div class="card-adjustment">
+                    <div class="card card-order">
+                        <figure class="card-img-order mx-auto">
+                            <img class="card-img" src="resimler/45.svg" alt="">
+                        </figure>
+                        <div class="card-body text-center">
+                            <h5 class="card-title card-title-order">Her siparişinize bir kampanya</h5>
+                            <p class="card-text card-text-order">Getir’de vereceğiniz her siparişe uygun bir
+                                kampanya
+                                bulabilirsiniz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-adjustment">
+                    <div class="card card-order">
+                        <figure class="card-img-order mx-auto">
+                            <img class="card-img" src="resimler/46.svg" alt="">
+                        </figure>
+                        <div class="card-body text-center">
+                            <h5 class="card-title card-title-order">Dakikalar içinde kapınızda</h5>
+                            <p class="card-text card-text-order">Getir’le siparişiniz dakikalar içinde kapınıza gelir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-adjustment">
+                    <div class="card card-order">
+                        <figure class="card-img-order mx-auto">
+                            <img class="card-img" src="resimler/44.svg" alt="">
+                        </figure>
+                        <div class="card-body text-center">
+                            <h5 class="card-title card-title-order">Binlerce çeşit mutluluk</h5>
+                            <p class="card-text card-text-order">Getir’de binlerce çeşit arasından seçiminizi
+                                yapabilirsiniz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <nav>
+        <div class="container-lg information">
+            <div>
+                <h5 class="information-title">Getir'i indirin!</h5>
+                <div class="download-image-footer">
+                    <img class="information-img" src="resimler/41.svg" alt="">
+                    <img class="information-img" src="resimler/42.svg" alt="">
+                    <img class="information-img" src="resimler/43.svg" alt="">
+                </div>
+            </div>
+            <div>
+                <h5 class="information-title">Getir'i keşfedin</h5>
+                <a href="#">
+                    <div class="information-text">Hakkımızda</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">Kariyer</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">Teknoloji Kariyerleri</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">İletişim</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">COVID-19 Duyuru</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">Sosyal Sorumluluk Projeleri</div>
+                </a>
+            </div>
+            <div>
+                <h5 class="information-title">Yardıma mı ihtiyacınız var?</h5>
+                <a href="#">
+                    <div class="information-text">Sıkça Sorulan Sorular</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">Kişisel Verilerin Korunması</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">Gizlilik Politikası</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">Kullanım Koşulları</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">Çerez Politikası</div>
+                </a>
+            </div>
+            <div>
+                <h5 class="information-title">İş Ortağımız Olun</h5>
+                <a href="#">
+                    <div class="information-text">Bayimiz Olun</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">Deponuzu Kiralayın</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">GetirYemek Restoranı Olun</div>
+                </a>
+                <a href="#">
+                    <div class="information-text">GetirÇarşı İşletmesi Olun</div>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <footer>
+        <div class="container-lg footer-control">
+            <span class="footer-left-text">
+                © 2022 Getir
+            </span>
+            <div class="footer-left-list">
+                <ol class="footer-left-list-ol">
+                    <li class="footer-left-list-li">
+                        <a href="#">Bilgi Toplumu Hizmetleri</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="social">
+                <ol class="social-list">
+                    <li>
+                        <a href="#">
+                            <div class="social-icon">
+                                <i class="bi bi-facebook social-icon-link"></i>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="social-icon">
+                                <i class="bi bi-twitter social-icon-link"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="social-icon">
+                                <i class="bi bi-instagram social-icon-link"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="btn btn-order d-none d-md-block"><i class="bi bi-globe2 me-2"></i><span class="hidden d-none d-lg-inline">Türkçe (TR)</span>
+                            </button>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-order d-block d-md-none"><i class="bi bi-globe2 me-1"></i> Türkçe (TR)
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
