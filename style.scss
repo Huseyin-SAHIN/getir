@@ -503,16 +503,16 @@ body {
     border-radius: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
     .download-contents {
-      min-width: 100%;
-      max-width: 100%;
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
       .download-image {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 0.5rem;
+      }
+      .download-text{
+        max-width: 50%;
       }
     }
   }
