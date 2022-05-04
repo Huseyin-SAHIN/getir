@@ -87,13 +87,13 @@ body {
       background-color: white;
       border-radius: 10px;
       padding: 1rem;
-
-      .entrance {
-        font-size: 17px;
-        color: $acik-mor;
-      }
     }
   }
+}
+
+.entrance {
+  font-size: 17px;
+  color: $acik-mor;
 }
 
 .phone {
@@ -107,6 +107,10 @@ body {
     background-color: $acik-mor;
     color: $sari;
   }
+}
+
+.login-register {
+  padding-top: 1rem;
 }
 
 .page-shadow {
@@ -148,8 +152,6 @@ body {
   position: relative;
   display: grid;
   gap: 1px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   overflow: hidden;
   .buy {
     background-color: white;
@@ -179,7 +181,7 @@ body {
     }
     .price-tag {
       font-size: 15px;
-      color: $siyah;
+      color: $gri;
       font-weight: 600;
     }
     .description {
@@ -218,6 +220,7 @@ body {
 }
 
 .bg-gri {
+  padding-top: 2rem;
   background-color: $background-gri;
   .download {
     display: grid;
@@ -266,9 +269,9 @@ body {
         padding: 0;
         margin: 0;
         .card-order {
+          background-color: white;
           height: 100%;
           padding: 3rem 1rem 3rem 1rem;
-          border: 0px;
           border-radius: 10px;
           .card-img-order {
             width: 150px;
@@ -433,35 +436,45 @@ body {
   .products {
     gap: 0px;
     grid-template-columns: repeat(4, 1fr);
-    background-color: white;
   }
 
   .page {
-    background-color: white;
-    .favorites {
-      grid-template-columns: repeat(3, 1fr);
-      .buy {
-        padding: 0;
-        .add {
-          right: 0;
-          top: 0;
-        }
-        .favorites-img-decoraion {
-          max-width: 120px;
-          max-height: 120px;
-          padding: 1rem;
-          margin-left: auto;
-          margin-right: auto;
-          .favorites-img {
-            border: 1px solid #5d3ebc13;
+    .container-lg {
+      padding: 0;
+      h2{
+        padding: 1rem 0 0 1rem;
+        background-color: white;
+        width: 100½;
+        margin: 0;
+      }
+      .favorites {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        .buy {
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          .add {
+            right: 0;
+            top: 0;
+          }
+          .favorites-img-decoraion {
+            max-width: 120px;
+            max-height: 120px;
+            padding: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            .favorites-img {
+              border: 1px solid #5d3ebc13;
+            }
           }
         }
-      }
 
-      .price {
-        margin: 0.5rem;
-        .price-tag {
-          font-weight: normal;
+        .price {
+          margin: 0.5rem;
+          .price-tag {
+            font-weight: normal;
+          }
         }
       }
     }
@@ -490,6 +503,7 @@ body {
     border-radius: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    width: 100%;
     .download-contents {
       min-width: 100%;
       max-width: 100%;
@@ -517,9 +531,11 @@ body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
-        .card-order {
-          border-radius: 0;
-          padding: 3rem 0.7rem 3rem 0.7rem;
+        .card-adjustment {
+          .card-order {
+            padding: 3rem 0.7rem 3rem 0.7rem;
+            border-radius: 0px;
+          }
         }
       }
     }
@@ -548,6 +564,7 @@ body {
   }
 
   .bg-gri {
+  padding-top: 0rem;
     .container-lg {
       padding: 0;
     }
@@ -555,7 +572,13 @@ body {
       border-radius: 0;
     }
   }
+
+  .login-register {
+    background-color: $background-gri;
+  }
+
   .page-shadow {
+    background-color: $background-gri;
     .products {
       .product {
         padding: 0.5rem 0;
