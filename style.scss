@@ -4,7 +4,6 @@ $kapali-mor: #4c3398;
 $acik-mor: #5d3ebc;
 $apacik-mor: #f3f0fe;
 $kenar-gri: #e8e8e8;
-$siyah: #3e3e3e;
 $background-gri: #fafafa;
 
 body {
@@ -87,6 +86,38 @@ body {
       background-color: white;
       border-radius: 10px;
       padding: 1rem;
+      .phone-login {
+        .country-code {
+          color: black;
+          float: left;
+          border: solid 2px $kenar-gri;
+          padding: 0.8rem;
+          font-size: 15px;
+          width: 27%;
+          margin-right: 3%;
+          border-radius: 5px;
+        }
+        .phone-number {
+          color: black;
+          border: solid 2px $kenar-gri;
+          padding: 0.8rem;
+          width: 70%;
+          font-size: 15px;
+          border-radius: 5px; 
+          transition: .1s ease-in;
+          &:hover{
+          border: solid 2px $acik-mor;
+          }
+        }
+        .bi-flag-fill{
+          color: red;
+          float: left;          
+        }
+        .bi-caret-down-fill{
+          color: $acik-mor;
+          float: right;
+        }
+      }
     }
   }
 }
@@ -111,6 +142,38 @@ body {
 
 .login-register {
   padding-top: 1rem;
+  .phone-login {
+    .country-code {
+      color: black;
+      float: left;
+      border: solid 2px $kenar-gri;
+      padding: 0.8rem;
+      font-size: 15px;
+      width: 20%;
+      margin-right: 3%;
+      border-radius: 5px;
+    }
+    .phone-number {
+      color: black;
+      border: solid 2px $kenar-gri;
+      padding: 0.8rem;
+      width: 77%;
+      font-size: 15px;
+      border-radius: 5px; 
+      transition: .1s ease-in;
+      &:hover{
+      border: solid 2px $acik-mor;
+      }
+    }
+    .bi-flag-fill{
+      color: red;
+      float: left;          
+    }
+    .bi-caret-down-fill{
+      color: $acik-mor;
+      float: right;
+    }
+  }
 }
 
 .page-shadow {
@@ -390,7 +453,7 @@ body {
   border-radius: 5px;
   border: 1px solid #686a6817;
   padding: 0.4rem 0.6rem;
-  color: $siyah;
+  color: black;
   border-radius: 8px;
   &:hover {
     background-color: $apacik-mor;
@@ -441,7 +504,7 @@ body {
   .page {
     .container-lg {
       padding: 0;
-      h2{
+      h2 {
         padding: 1rem 0 0 1rem;
         background-color: white;
         width: 100½;
@@ -511,7 +574,7 @@ body {
         grid-template-columns: repeat(1, 1fr);
         gap: 0.5rem;
       }
-      .download-text{
+      .download-text {
         max-width: 50%;
       }
     }
@@ -564,7 +627,7 @@ body {
   }
 
   .bg-gri {
-  padding-top: 0rem;
+    padding-top: 0rem;
     .container-lg {
       padding: 0;
     }

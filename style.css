@@ -94,6 +94,42 @@ body a {
   padding: 1rem;
 }
 
+.sidebar .mt-space .card-entrance .phone-login .country-code {
+  color: black;
+  float: left;
+  border: solid 2px #e8e8e8;
+  padding: 0.8rem;
+  font-size: 15px;
+  width: 27%;
+  margin-right: 3%;
+  border-radius: 5px;
+}
+
+.sidebar .mt-space .card-entrance .phone-login .phone-number {
+  color: black;
+  border: solid 2px #e8e8e8;
+  padding: 0.8rem;
+  width: 70%;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+
+.sidebar .mt-space .card-entrance .phone-login .phone-number:hover {
+  border: solid 2px #5d3ebc;
+}
+
+.sidebar .mt-space .card-entrance .phone-login .bi-flag-fill {
+  color: red;
+  float: left;
+}
+
+.sidebar .mt-space .card-entrance .phone-login .bi-caret-down-fill {
+  color: #5d3ebc;
+  float: right;
+}
+
 .entrance {
   font-size: 17px;
   color: #5d3ebc;
@@ -115,6 +151,42 @@ body a {
 
 .login-register {
   padding-top: 1rem;
+}
+
+.login-register .phone-login .country-code {
+  color: black;
+  float: left;
+  border: solid 2px #e8e8e8;
+  padding: 0.8rem;
+  font-size: 15px;
+  width: 20%;
+  margin-right: 3%;
+  border-radius: 5px;
+}
+
+.login-register .phone-login .phone-number {
+  color: black;
+  border: solid 2px #e8e8e8;
+  padding: 0.8rem;
+  width: 77%;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+
+.login-register .phone-login .phone-number:hover {
+  border: solid 2px #5d3ebc;
+}
+
+.login-register .phone-login .bi-flag-fill {
+  color: red;
+  float: left;
+}
+
+.login-register .phone-login .bi-caret-down-fill {
+  color: #5d3ebc;
+  float: right;
 }
 
 .page-shadow {
@@ -457,7 +529,7 @@ body a {
   border-radius: 5px;
   border: 1px solid #686a6817;
   padding: 0.4rem 0.6rem;
-  color: #3e3e3e;
+  color: black;
   border-radius: 8px;
 }
 
