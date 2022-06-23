@@ -156,8 +156,8 @@ body a {
 .login-register .phone-login {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 5fr;
-      grid-template-columns: 1fr 5fr;
+  -ms-grid-columns: 2fr 5fr;
+      grid-template-columns: 2fr 5fr;
   gap: 0.5rem;
 }
 
