@@ -99,14 +99,14 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="login-register">
         <form class="d-block d-md-none px-3">
-            <h5 class="entrance mt-4 mb-3 text-center">
+            <h5 class="entrance mb-3 text-center">
                 Giriş yap veya kayıt ol
             </h5>
-            <div class="input-group">
-                <span class="input-group-text">+90</span>
-                <input required type="number" class="form-control" placeholder="Telefon Numarası" />
+            <div class="phone-login">
+                <div class="country-code text-center"><i class="bi bi-flag-fill"></i>+90<i class="bi bi-caret-down-fill"></i></div>
+                <input class="phone-number" pattern="[0-9]{10}" required type="text" placeholder="Telefon Numarası" />
             </div>
             <input type="submit" value="Telefon numarası ile devam et" class="btn phone mt-3">
         </form>
