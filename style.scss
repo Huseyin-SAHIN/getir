@@ -161,6 +161,8 @@ body {
             display: none;
             color: $gri;
             z-index: 1;
+            border: solid 2px $kenar-gri;
+            border-radius: 5px;
 
             span {
               display: block;
@@ -285,6 +287,8 @@ body {
         display: none;
         color: $gri;
         z-index: 1;
+        border: solid 2px $kenar-gri;
+        border-radius: 5px;
 
         span {
           display: block;

@@ -134,6 +134,8 @@ body a {
   display: none;
   color: #697488;
   z-index: 1;
+  border: solid 2px #e8e8e8;
+  border-radius: 5px;
 }
 .sidebar .mt-space .card-entrance .phone-login .country-code .phones span {
   display: block;
@@ -238,6 +240,8 @@ body a {
   display: none;
   color: #697488;
   z-index: 1;
+  border: solid 2px #e8e8e8;
+  border-radius: 5px;
 }
 .login-register .phone-login .country-code .phones span {
   display: block;
