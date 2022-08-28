@@ -16,6 +16,7 @@ body {
   background-color: $kapali-mor;
   padding-top: 0.2rem;
   padding-bottom: 0px;
+
   .navbar-text-one {
     font-size: 17px;
     color: white;
@@ -23,25 +24,31 @@ body {
     opacity: 0.8;
     margin-right: 1px;
     font-weight: 500;
+
     &:hover {
       background-color: $acik-mor;
       color: white;
     }
+
     &:visited {
       color: white;
     }
   }
+
   .active {
     opacity: 1;
     color: $sari;
     background-color: $acik-mor;
+
     &:hover {
       color: $sari;
     }
+
     &:visited {
       color: $sari;
     }
   }
+
   .navbar-text-two {
     padding-right: 0;
     padding-left: 2rem;
@@ -49,12 +56,15 @@ body {
     color: white;
     opacity: 0.85;
     font-size: 15px;
+
     &:hover {
       color: white;
     }
+
     &:visited {
       color: white;
     }
+
     .navbar-icon {
       padding: 0;
       margin: 0;
@@ -76,44 +86,113 @@ body {
   color: white;
   padding: 20px;
   height: 500px;
+
   .mt-space {
     margin-top: 5rem;
+
     .logo {
       max-width: 313px;
     }
+
     .card-entrance {
       max-width: 398px;
       background-color: white;
       border-radius: 10px;
       padding: 1rem;
+
       .phone-login {
+        display: flex;
+        gap: 0.7rem;
+
         .country-code {
-          color: black;
-          float: left;
           border: solid 2px $kenar-gri;
           padding: 0.8rem;
           font-size: 15px;
           width: 27%;
-          margin-right: 3%;
           border-radius: 5px;
+          position: relative;
+          cursor: pointer;
+
+
+          .bi-telephone-forward-fill {
+            font-size: 15px;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(0, -50%);
+            color: $acik-mor;
+          }
+
+          .onphone {
+            color: $gri;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 35%;
+          }
+
+          .bi-chevron-down {
+            color: $kapali-mor;
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            font-weight: bold;
+            transform: translate(0, -50%);
+            font-size: 15px;
+          }
+
+          input {
+            display: none;
+          }
+
+          #phone:checked+.phones {
+            display: block;
+          }
+
+          .phones {
+            position: absolute;
+            width: 100%;
+            bottom: 0%;
+            transform: translate(0, 105%);
+            left: 0;
+            background-color: $background-gri;
+            height: 200px;
+            overflow-y: auto;
+            display: none;
+            color: $gri;
+            z-index: 1;
+
+            span {
+              display: block;
+            }
+
+            span:hover {
+              background-color: $kenar-gri;
+            }
+          }
+
         }
+
         .phone-number {
           color: black;
           border: solid 2px $kenar-gri;
           padding: 0.8rem;
-          width: 70%;
           font-size: 15px;
-          border-radius: 5px; 
+          flex-grow: 1;
+          border-radius: 5px;
           transition: .1s ease-in;
-          &:hover{
-          border: solid 2px $acik-mor;
+
+          &:hover {
+            border: solid 2px $acik-mor;
           }
         }
-        .bi-flag-fill{
+
+        .bi-flag-fill {
           color: red;
-          float: left;          
+          float: left;
         }
-        .bi-caret-down-fill{
+
+        .bi-caret-down-fill {
           color: $acik-mor;
           float: right;
         }
@@ -134,6 +213,7 @@ body {
   background-color: $sari;
   padding: 0.8rem;
   width: 100%;
+
   &:hover {
     background-color: $acik-mor;
     color: $sari;
@@ -142,36 +222,101 @@ body {
 
 .login-register {
   padding-top: 1rem;
+
   .phone-login {
-    display: grid;
-    grid-template-columns: 2fr 5fr;
-    gap: 0.5rem;
+    display: flex;
+    gap: 0.7rem;
+
     .country-code {
-      color: black;
-      float: left;
       border: solid 2px $kenar-gri;
       padding: 0.8rem;
       font-size: 15px;
-      min-width: 87px;
-      margin-right: 3%;
+      width: 27%;
       border-radius: 5px;
+      position: relative;
+      cursor: pointer;
+
+
+      .bi-telephone-forward-fill {
+        font-size: 15px;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(0, -50%);
+        color: $acik-mor;
+      }
+
+      .onphone {
+        color: $gri;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 35%;
+      }
+
+      .bi-chevron-down {
+        color: $kapali-mor;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        font-weight: bold;
+        transform: translate(0, -50%);
+        font-size: 15px;
+      }
+
+      input {
+        display: none;
+      }
+
+      #phone2:checked+.phones {
+        display: block;
+
+      }
+
+      .phones {
+        position: absolute;
+        width: 100%;
+        bottom: 0%;
+        transform: translate(0, 105%);
+        left: 0;
+        background-color: $background-gri;
+        height: 200px;
+        overflow-y: auto;
+        display: none;
+        color: $gri;
+        z-index: 1;
+
+        span {
+          display: block;
+        }
+
+        span:hover {
+          background-color: $kenar-gri;
+        }
+      }
+
     }
+
     .phone-number {
       color: black;
       border: solid 2px $kenar-gri;
       padding: 0.8rem;
       font-size: 15px;
-      border-radius: 5px; 
+      flex-grow: 1;
+      border-radius: 5px;
       transition: .1s ease-in;
-      &:hover{
-      border: solid 2px $acik-mor;
+
+      &:hover {
+        border: solid 2px $acik-mor;
       }
     }
-    .bi-flag-fill{
+
+    .bi-flag-fill {
       color: red;
-      float: left;          
+      float: left;
     }
-    .bi-caret-down-fill{
+
+    .bi-caret-down-fill {
       color: $acik-mor;
       float: right;
     }
@@ -182,23 +327,28 @@ body {
   box-shadow: 0 8px 20px -18px #666;
   margin: 0;
   padding: 0;
+
   .products {
     position: relative;
     display: grid;
+
     .product {
       padding: 0.2rem;
       padding-top: 0.8rem;
       padding-bottom: 0.86rem;
       border-radius: 2px;
+
       &:hover {
         background-color: $apacik-mor;
         color: #5d3ebc;
       }
+
       .product-img {
         max-width: 3rem;
         border: 1px solid $kenar-gri;
         border-radius: 10px;
       }
+
       .product-text {
         font-size: 15px;
         color: $gri;
@@ -218,16 +368,19 @@ body {
   display: grid;
   gap: 1px;
   overflow: hidden;
+
   .buy {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
     padding: 0.5rem;
+
     .favorites-img {
       border-radius: 5px;
       max-width: 100%;
       max-height: 100%;
     }
+
     .add {
       color: #5d3ebcce;
       font-size: 1.3rem;
@@ -241,14 +394,17 @@ body {
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
     }
+
     .price {
       color: #5d3ebc;
     }
+
     .price-tag {
       font-size: 15px;
       color: $gri;
       font-weight: 600;
     }
+
     .description {
       font-size: 14px;
       color: $gri;
@@ -278,6 +434,7 @@ body {
   color: $gri;
   padding: 0;
   margin: 0.5rem;
+
   .location-icon {
     color: $acik-mor;
     margin-right: 10px;
@@ -287,6 +444,7 @@ body {
 .bg-gri {
   padding-top: 2rem;
   background-color: $background-gri;
+
   .download {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -295,25 +453,31 @@ body {
     background-image: url("resimler/39.png");
     overflow: hidden;
     padding-left: 2.5rem;
+
     .download-contents {
       min-width: 500px;
       margin-top: auto;
       margin-bottom: auto;
+
       .download-title {
         color: white;
       }
+
       .download-text {
         color: white;
         font-size: 18px;
       }
+
       .download-image {
         margin-top: 2rem;
       }
     }
+
     .download-background {
       padding-top: 2rem;
       width: 100%;
       height: 100%;
+
       .download-background-image {
         min-width: 100%;
       }
@@ -323,30 +487,37 @@ body {
 
 .cards {
   background-color: $background-gri;
+
   .card-content {
     padding-top: 4rem;
     padding-bottom: 4rem;
+
     .card-control {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
+
       .card-adjustment {
         padding: 0;
         margin: 0;
+
         .card-order {
           background-color: white;
           height: 100%;
           padding: 3rem 1rem 3rem 1rem;
           border-radius: 10px;
+
           .card-img-order {
             width: 150px;
             height: 150px;
           }
+
           .card-body {
             .card-title-order {
               color: $kapali-mor;
               font-size: 18px;
             }
+
             .card-text-order {
               font-size: 16px;
               color: $gri;
@@ -362,24 +533,29 @@ body {
 .information {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
   .information-title {
     color: $acik-mor;
     font-size: 18px;
     margin-top: 3rem;
     padding-bottom: 0.5rem;
   }
+
   .download-image-footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 0.5rem;
+
     .information-img {
       margin-bottom: 1rem;
     }
   }
+
   .information-text {
     margin-top: 0.5rem;
     color: $gri;
     font-size: 16px;
+
     &:hover {
       color: $gri;
     }
@@ -392,21 +568,26 @@ body {
   padding-bottom: 1rem;
   display: flex;
   justify-content: center;
+
   .footer-left-text {
     font-size: 13px;
   }
+
   .footer-left-list {
     margin: 0;
     padding: 0;
+
     .footer-left-list-ol {
       list-style: disc;
       color: #5d3ebc;
       font-size: 10px;
       margin: 0;
+
       .footer-left-list-li {
         a {
           font-size: 13px;
           color: $acik-mor;
+
           &:hover a {
             color: $acik-mor;
           }
@@ -414,8 +595,10 @@ body {
       }
     }
   }
+
   .social {
     flex: 1 1 0%;
+
     .social-list {
       display: flex;
       justify-content: flex-end;
@@ -432,14 +615,17 @@ body {
         height: 35px;
         width: 35px;
         border-radius: 10px;
+
         &:hover {
           background-color: $apacik-mor;
         }
+
         &:hover {
           .social-icon-link {
             color: $acik-mor;
           }
         }
+
         .social-icon-link {
           font-size: 20px;
           color: $gri;
@@ -457,6 +643,7 @@ body {
   padding: 0.4rem 0.6rem;
   color: black;
   border-radius: 8px;
+
   &:hover {
     background-color: $apacik-mor;
     border: 1px solid $apacik-mor;
@@ -490,6 +677,7 @@ body {
   .favorites {
     grid-template-columns: repeat(5, 1fr);
     gap: 0;
+
     .add {
       right: 1.4rem;
       top: 1rem;
@@ -506,29 +694,35 @@ body {
   .page {
     .container-lg {
       padding: 0;
+
       h2 {
         padding: 1rem 0 0 1rem;
         background-color: white;
         width: 100½;
         margin: 0;
       }
+
       .favorites {
         grid-template-columns: repeat(3, 1fr);
         gap: 0;
+
         .buy {
           padding: 0;
           width: 100%;
           height: 100%;
+
           .add {
             right: 0;
             top: 0;
           }
+
           .favorites-img-decoraion {
             max-width: 120px;
             max-height: 120px;
             padding: 1rem;
             margin-left: auto;
             margin-right: auto;
+
             .favorites-img {
               border: 1px solid #5d3ebc13;
             }
@@ -537,6 +731,7 @@ body {
 
         .price {
           margin: 0.5rem;
+
           .price-tag {
             font-weight: normal;
           }
@@ -548,10 +743,12 @@ body {
   .overflow-teeth {
     overflow: hidden;
     height: 35px;
+
     .overflow-inside {
       overflow: auto;
       padding-top: 2rem;
       padding-bottom: 2rem;
+
       .navbar-text-one {
         font-size: 15px;
       }
@@ -568,14 +765,17 @@ body {
     border-radius: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+
     .download-contents {
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
+
       .download-image {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 0.5rem;
       }
+
       .download-text {
         max-width: 50%;
       }
@@ -589,13 +789,16 @@ body {
   .cards {
     padding: 1rem 0;
     background-color: $background-gri;
+
     .card-content {
       padding-top: 0;
       padding-bottom: 0;
+
       .card-control {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
+
         .card-adjustment {
           .card-order {
             padding: 3rem 0.7rem 3rem 0.7rem;
@@ -611,8 +814,10 @@ body {
     text-align: center;
     background-color: white;
     border-top: 0;
+
     .footer-left-list {
       padding: 0.5rem;
+
       .footer-left-list-ol {
         list-style: none;
         padding: 0;
@@ -630,9 +835,11 @@ body {
 
   .bg-gri {
     padding-top: 0rem;
+
     .container-lg {
       padding: 0;
     }
+
     .download {
       border-radius: 0;
     }
@@ -644,6 +851,7 @@ body {
 
   .page-shadow {
     background-color: $background-gri;
+
     .products {
       .product {
         padding: 0.5rem 0;
